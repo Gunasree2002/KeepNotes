@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_layout"
+    android:background="@android:color/white"
+    tools:context=".MenuOptions">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Notes"
+        android:textSize="22sp"
+        android:layout_margin="20sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="50sp"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="190dp"
+           android:layout_height="60sp"
+           android:id="@+id/reminder_screen"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="20sp"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="25sp"
+               android:layout_height="25sp"
+               android:layout_gravity="center"
+               android:src="@drawable/reminder"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="15sp"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"
+               android:text="Reminder" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="190dp"
+           android:layout_height="60sp"
+           android:layout_marginLeft="20sp"
+           android:id="@+id/trash_screen"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="30sp"
+               android:layout_height="25sp"
+               android:layout_gravity="center"
+               android:src="@drawable/delete"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:layout_margin="15dp"
+               android:text="Trash" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="190dp"
+           android:layout_height="60sp"
+           android:layout_marginLeft="20sp"
+           android:id="@+id/archieve_screen"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="30sp"
+               android:layout_height="25sp"
+               android:layout_gravity="center"
+               android:src="@drawable/folder"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:layout_margin="15dp"
+               android:text="Archieve" />
+       </LinearLayout
+>
+
+   </LinearLayout>
+
+</FrameLayout>

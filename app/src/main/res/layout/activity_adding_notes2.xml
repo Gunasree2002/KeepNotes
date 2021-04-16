@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddingNotes">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/notification"
+        android:layout_height="40dp"
+        android:src="@drawable/notification"
+        android:layout_gravity="end"
+        android:layout_margin="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <EditText
+            android:id="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relative_layout"
+            android:inputType="text"
+            android:hint="Title"
+            android:textSize="25sp"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/note_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_title"
+            android:textSize="20sp"
+            android:hint="Note"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:id="@+id/save_note"
+            android:layout_height="50sp"
+            android:src="@drawable/next"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_below="@+id/note_description"
+            android:layout_alignParentRight="true"/>
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="300sp"
+            android:layout_height="380dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/save_note"
+            android:layout_marginBottom="24dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
